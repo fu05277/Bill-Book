@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  bill_book_blient:
+    container_name: bill_book_client
+    build: .
+    volumes:
+      - .:/app/bill-app
+    ports:
+      - 4200:4200
